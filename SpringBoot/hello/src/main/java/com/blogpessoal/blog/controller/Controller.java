@@ -1,4 +1,4 @@
-package com.helloworld.hello.controller;
+package com.blogpessoal.blog.controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -6,16 +6,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/pagina")
-public class HelloController {
+public class Controller {
 
 	@GetMapping("1")
-	public String hello() 
+	public String msg() 
 	{
 		return("Habilidade: Proatividade|Mentalidade: Persistencia");
 	}	
 	
 	@GetMapping("2")
-	public String hello2() 
+	public String msg2() 
 	{
 		return("Objetivo: Aprender springboot");
 	}	
