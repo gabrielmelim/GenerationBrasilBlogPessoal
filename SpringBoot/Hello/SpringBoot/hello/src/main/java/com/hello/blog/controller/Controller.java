@@ -1,4 +1,4 @@
-package com.blogpessoal.blog.controller;
+package com.hello.blog.controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
