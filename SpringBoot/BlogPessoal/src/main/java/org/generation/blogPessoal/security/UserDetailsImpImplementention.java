@@ -1,4 +1,4 @@
-package org.generation.BlogPessoal.seguranca;
+package org.generation.BlogPessoal.security;
 
 import org.generation.BlogPessoal.model.Usuario;
 import org.springframework.security.core.GrantedAuthority;
