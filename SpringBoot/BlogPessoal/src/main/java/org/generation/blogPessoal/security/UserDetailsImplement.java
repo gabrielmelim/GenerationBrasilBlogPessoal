@@ -6,20 +6,19 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 
-public class UserDetailsImpImplementention implements UserDetails {
+public class UserDetailsImplement implements UserDetails {
 
-    private static final long serialVersionUID = 1L;
-    private String userName;
-    private String password;
+    private String email;
+    private String senha;
+    private Collection<? extends GrantedAuthority> authorities;
 
-    public UserDetailsImpImplementention(Usuario user)
-    {
-        this.userName = user.getUsuario();
-        this.password = user.getSenha();
+    public UserDetailsImplement(Usuario usuario){
+        this.email = usuario.getEmail();
+        this.senha = usuario.getSenha();
     }
 
+    public UserDetailsImplement(){}
 
-    public UserDetailsImpImplementention() {}
 
 
     @Override
@@ -29,31 +28,31 @@ public class UserDetailsImpImplementention implements UserDetails {
 
     @Override
     public String getPassword() {
-        return password;
+        return null;
     }
 
     @Override
     public String getUsername() {
-        return userName;
+        return null;
     }
 
     @Override
     public boolean isAccountNonExpired() {
-        return true;
+        return false;
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return true;
+        return false;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return true;
+        return false;
     }
 
     @Override
     public boolean isEnabled() {
-        return true;
+        return false;
     }
 }

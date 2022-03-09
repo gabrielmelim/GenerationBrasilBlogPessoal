@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/postagens")
+@RequestMapping("/api/postagens")
 @CrossOrigin("*")
 public class PostagemController {
 

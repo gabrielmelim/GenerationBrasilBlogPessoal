@@ -18,12 +18,28 @@ public class Usuario {
 
     @NotNull
     @Size(min = 5, max = 100)
-    private String usuario;
+    private String email;
 
     @NotNull
     @Size(min = 5, max = 100)
     private String senha;
 
+    @NotNull
+    private String cpf;
+
+    public Usuario(String nome, String cpf, String email, String senha) {
+    }
+
+    public Usuario() { }
+
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
 
     public long getId() {
         return id;
@@ -41,13 +57,9 @@ public class Usuario {
         this.nome = nome;
     }
 
-    public String getUsuario() {
-        return usuario;
-    }
+    public String getEmail() { return email; }
 
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
-    }
+    public void setEmail(String email) { this.email = email; }
 
     public String getSenha() {
         return senha;

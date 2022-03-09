@@ -14,15 +14,21 @@ import java.util.Optional;
 public class UserDetailsServiceImplementention implements UserDetailsService {
 
     @Autowired
-    private UsuarioRepository userRepository;
+    private UsuarioRepository repository;
 
     @Override
-    public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException
-    {
-        Optional<Usuario> user = userRepository.findByUsuario(userName);
-        user.orElseThrow(() -> new UsernameNotFoundException(userName +" not found"));
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-        return user.map(UserDetailsImpImplementention::new).get();
+        Optional<Usuario> usuario = repository.findByEmail(username);
+        if (usuario.isPresent())
+        {
+            return new UserDetailsImplement(usuario.get());
+
+        }
+        else
+        {
+            throw new UsernameNotFoundException("Usuário não encontrado");
+        }
     }
 
 
