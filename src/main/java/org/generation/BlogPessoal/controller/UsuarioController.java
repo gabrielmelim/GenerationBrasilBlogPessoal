@@ -1,4 +1,4 @@
-package org.generation.blogPessoal.controller;
+package org.generation.BlogPessoal.controller;
 
 
 import org.generation.BlogPessoal.dtos.UserCredentialDTO;
