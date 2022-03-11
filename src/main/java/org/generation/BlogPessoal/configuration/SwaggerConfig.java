@@ -19,12 +19,12 @@ public class SwaggerConfig {
                         .description("Projeto para postagens de diversos temas")
                         .version("v0.0.1")
                         .contact(new Contact()
-                                .name("Github Fernando")
-                                .url("https://github.com/fernandoportodev")
-                                .email("fernandogomes143@gmail.com")))
+                                .name("Github Gabriel Melim")
+                                .url("https://github.com/GabrielMelim")
+                                .email("gabrielmelim2012@hotmail.com")))
                 .externalDocs(new ExternalDocumentation()
                         .description("Github Project")
-                        .url("https://github.com/fernandoportodev/Blog_Pessoal"));
+                        .url("https://github.com/gabrielmelim/GenerationBrasilBlogPessoal"));
     }
 
 }
