@@ -13,7 +13,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
-
 import javax.validation.Valid;
 import java.util.List;
 
@@ -26,6 +25,7 @@ public class UsuarioController {
 
     private @Autowired UsuarioService services;
     private @Autowired UsuarioRepository repository;
+
 
     @GetMapping
     public List<Usuario> findAll(){

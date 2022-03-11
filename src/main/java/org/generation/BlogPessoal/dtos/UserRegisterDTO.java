@@ -12,6 +12,17 @@ public class UserRegisterDTO {
     private @NotBlank @Email String email;
     private @NotBlank String senha;
 
+    public UserRegisterDTO() {
+        super();
+    }
+
+    public UserRegisterDTO(String nome, String cpf, String email, String senha) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.email = email;
+        this.senha = senha;
+    }
+
 
     public String getNome() {
         return nome;
