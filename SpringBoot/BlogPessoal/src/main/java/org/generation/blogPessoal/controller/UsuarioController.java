@@ -1,5 +1,6 @@
 package org.generation.BlogPessoal.controller;
 
+
 import org.generation.BlogPessoal.dtos.UserCredentialDTO;
 import org.generation.BlogPessoal.dtos.UserLoginDTO;
 import org.generation.BlogPessoal.dtos.UserRegisterDTO;
@@ -12,9 +13,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+
 import javax.validation.Valid;
 import java.util.List;
-import java.util.Optional;
+
 
 @RestController
 @RequestMapping("/api/usuarios")
