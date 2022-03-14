@@ -1,4 +1,4 @@
-package org.generation.BlogPessoal.dtos;
+package org.generation.blogPessoal.dtos;
 
 public class UserCredentialDTO {
     private Long id;

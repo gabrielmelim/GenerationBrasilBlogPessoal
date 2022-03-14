@@ -1,4 +1,4 @@
-package org.generation.BlogPessoal.configuration;
+package org.generation.blogPessoal.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

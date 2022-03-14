@@ -1,4 +1,4 @@
-package org.generation.BlogPessoal.repository;
+package org.generation.blogPessoal.repository;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;

@@ -1,9 +1,17 @@
-package org.generation.BlogPessoal.dtos;
+package org.generation.blogPessoal.dtos;
 
 import org.hibernate.validator.constraints.br.CPF;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+
+/**
+ * Interface responsible for the validation register of the user.
+ *
+ * @author Melim
+ * @since 13/03/2022
+ * @version 1.0
+ */
 
 public class UserRegisterDTO {
 
@@ -12,6 +20,17 @@ public class UserRegisterDTO {
     private @NotBlank @Email String email;
     private @NotBlank String senha;
 
+    public UserRegisterDTO() {
+        super();
+    }
+
+    public UserRegisterDTO(String nome, String cpf, String email,String senha) {
+        super();
+        this.nome = nome;
+        this.cpf = cpf;
+        this.email = email;
+        this.senha = senha;
+    }
 
     public String getNome() {
         return nome;

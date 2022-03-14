@@ -1,43 +1,39 @@
-package org.generation.BlogPessoal.model;
+package org.generation.blogPessoal.model;
+
+
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import net.bytebuddy.dynamic.loading.InjectionClassLoader;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotBlank;
 import java.util.List;
+
 
 @Entity
 @Table(name = "tb_tema")
 public class Tema {
 
-    @Id
+
+    // System generated
+    private @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    Long idTema;
 
-    @NotNull
-    private String descricao;
+    private @NotBlank String tema;
 
+    // Relationship
     @OneToMany(mappedBy = "tema", cascade = CascadeType.ALL)
     @JsonIgnoreProperties("tema")
     private List<Postagem> postagem;
 
+    //Getter and Setter
 
-
-    public long getId() {
-        return id;
+    public String getTema() {
+        return tema;
     }
 
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public void setTema(String tema) {
+        this.tema = tema;
     }
 
     public List<Postagem> getPostagem() {
@@ -46,5 +42,13 @@ public class Tema {
 
     public void setPostagem(List<Postagem> postagem) {
         this.postagem = postagem;
+    }
+
+    public Long getIdTema() {
+        return idTema;
+    }
+
+    public void setIdTema(Long idTema) {
+        this.idTema = idTema;
     }
 }

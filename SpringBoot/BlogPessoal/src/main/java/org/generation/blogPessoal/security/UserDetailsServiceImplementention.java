@@ -1,7 +1,7 @@
-package org.generation.BlogPessoal.security;
+package org.generation.blogPessoal.security;
 
-import org.generation.BlogPessoal.model.Usuario;
-import org.generation.BlogPessoal.repository.UsuarioRepository;
+import org.generation.blogPessoal.model.Usuario;
+import org.generation.blogPessoal.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

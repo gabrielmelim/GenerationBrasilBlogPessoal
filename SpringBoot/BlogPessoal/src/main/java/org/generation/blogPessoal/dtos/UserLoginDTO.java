@@ -1,4 +1,4 @@
-package org.generation.BlogPessoal.dtos;
+package org.generation.blogPessoal.dtos;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
